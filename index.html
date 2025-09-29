@@ -5,26 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fahri Aydın | Full Stack Developer</title>
   <style>
+    /* Genel stil */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background: #0f172a;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
       color: #f8fafc;
+      background: #0f172a;
+    }
+    a { color: #38bdf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    header {
+      padding: 1rem;
+      text-align: center;
+      background: #1e293b;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 { font-size: 1.5rem; }
+
+    /* Bölümler */
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 4rem 1rem;
       text-align: center;
     }
-    h1 { font-size: 2rem; margin-bottom: 1rem; }
-    p { font-size: 1.2rem; color: #94a3b8; }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #38bdf8;
+    }
+    section p {
+      color: #94a3b8;
+      margin-bottom: 1rem;
+    }
+
+    /* Projeler */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .project-card {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+    .project-card h3 { margin-bottom: 0.5rem; color: #f1f5f9; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #1e293b;
+      margin-top: 2rem;
+      color: #94a3b8;
+    }
   </style>
 </head>
 <body>
-  <div>
-    <h1>🚀 Fahri Aydın</h1>
-    <p>Full Stack Developer</p>
-    <p>Portfolyo sitem yakında yayında...</p>
-  </div>
+  <header>
+    <h1>🚀 Fahri Aydın | Full Stack Developer</h1>
+  </header>
+
+  <section id="hero">
+    <h2>Hoş Geldiniz</h2>
+    <p>Ben Fahri Aydın. Full Stack Web Developer olarak modern, dinamik ve çoklu dil destekli web projeleri geliştiriyorum.</p>
+  </section>
+
+  <section id="about">
+    <h2>Hakkımda</h2>
+    <p>HTML, CSS, JavaScript, React, Python, SQL ve ASP.NET Core ile çalışıyorum. 
+       Hedefim modern ve global ölçekte projeler geliştirmek.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projeler</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Kayialp</h3>
+        <p>ASP.NET Core MVC, çoklu dil destekli kurumsal web sitesi.</p>
+        <a href="#">Demo yakında</a>
+      </div>
+      <div class="project-card">
+        <h3>Aknet Güvenlik</h3>
+        <p>ASP.NET Core MVC ile güvenlik sistemleri için kurumsal site.</p>
+        <a href="#">Demo yakında</a>
+      </div>
+      <div class="project-card">
+        <h3>E-Ticaret</h3>
+        <p>Python / Flask tabanlı e-ticaret sistemi.</p>
+        <a href="https://github.com/CestnyTR/e-commerce" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>İletişim</h2>
+    <p>Benimle iletişime geçmek için:</p>
+    <p>
+      <a href="mailto:fahriaydin47@gmail.com">📧 E-posta</a> | 
+      <a href="https://www.linkedin.com/in/cestnytr/" target="_blank">💼 LinkedIn</a> | 
+      <a href="https://github.com/CestnyTR" target="_blank">🐙 GitHub</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Fahri Aydın. Tüm hakları saklıdır.</p>
+  </footer>
 </body>
 </html>
